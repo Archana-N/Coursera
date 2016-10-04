@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+	text-align: center;
+	font-size: 175%;
+	font-family: georgian;
+	font-weight: bold;
+}
+
+span {	
+	border-top: 0px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 0px;
+	border-color: black;
+	border-style: solid;
+		
+	position: relative;
+	float: right;
+	height: 25px;	
+	text-align: center;	
+	font-size: 125%;
+}
+
+#htmlSpan{
+	background-color: yellow;	
+	width: 100px;
+}
+
+#cssSpan{
+	background-color: maroon;
+	color: white;
+	width: 80px;
+}
+
+#jsSpan{
+	background-color: green;
+	width: 110px;
+}
+
+section {
+	border: 1px solid black;	
+	margin-left: 10px;	
+	margin-top: 10px;
+	background: gray;
+	font-weight: bold;
+	font-family: georgian;	
+	box-sizing: border-box;	
+}
+
+div {
+	padding: 10px;		
+	margin: 15px;
+}
+
+@media (min-width: 992px) {
+	#htmlSection, #cssSection, #jsSection {
+		float: left;
+		position: relative;	
+		width: 30%;		
+	}
+	
+	/* #htmlSection {
+		width: 30%;
+	}	
+	
+	#cssSection{
+		width: 30%;
+	}	
+	
+	#jsSection{
+		width: 30%;
+	}	 */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#htmlSection, #cssSection, #jsSection {
+		float: left;
+		position: relative;				
+	}
+	
+	#htmlSection, #cssSection{
+		width: 45%;		
+	}	
+	
+	/* #cssSection{
+		width: 45%;		
+	}	 */
+	
+	#jsSection{
+		width: 95%;				
+	}	
+}
+
+@media (max-width: 767px) {
+	#htmlSection, #cssSection, #jsSection {
+		float: left;
+		position: relative;		
+		width: 95%;
+	}
+	
+	/* #htmlSection {
+		width: 100%;
+	}	
+	
+	#cssSection{
+		width: 100%;
+	}	
+	
+	#jsSection{
+		width: 100%;
+	}	 */
+}
